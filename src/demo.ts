@@ -1,5 +1,3 @@
-// @ts-check
-
 (()=> {
   const myCart = [];
   const products = [];
@@ -19,7 +17,7 @@
     }
     return total;
   }
-  function addProduct(index) {
+  function addProduct(index: number) {
     if (getTotal() <= limit) {
       myCart.push(products[index]);
     }
@@ -34,6 +32,6 @@
     name: 'Nicolas',
     lastName: 'Molina'
   }
-  const rta = {...person, limit};
-  console.log(rta);
+  // const rta = {...person, limit};
+  // console.log(rta);
 });
