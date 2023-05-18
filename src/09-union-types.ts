@@ -3,11 +3,11 @@
   userId = 12;
   userId = '12';
 
-  function greeting(text: string | number) {
-    if (typeof text == 'string') {
-      console.log(`string ${text.toLowerCase()}`);
+  function greeting(userId: string | number) {
+    if (typeof userId == 'string') {
+      console.log(`string ${userId.toLowerCase()}`);
     } else {
-      console.log(`number ${text.toFixed(1)}`);
+      console.log(`number ${userId.toFixed(1)}`);
     }
   }
 
